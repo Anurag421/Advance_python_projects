@@ -1,5 +1,4 @@
 import re
-import csv
 
 class ContactBook():
     def __init__(self):
@@ -73,19 +72,19 @@ class ContactBook():
 
 
 # using class
-# Example Usage
+
 if __name__ == "__main__":
 
     manager = ContactBook()
 
-    # Add a contact
+    # Adding a contact
     contact_id = manager.add_contact("Anurag", "Google", "7571876100", "singh2907anurag@gmail.com", 
                                      "29july199", "India", "Personal", "You are blessed!")
 
-    # Edit a contact
+    # Editing a contact
     manager.edit_contact(contact_id, phone="1234567890", notes="Updated notes")
 
-    # Search by name
+    # Searching by name
     search_results = manager.search_contact_by_name("Anurag")
     print("Search Results:", search_results)
     
